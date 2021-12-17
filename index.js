@@ -4,13 +4,13 @@ import { ApolloServer } from 'apollo-server-express';
 import dotenv from 'dotenv';
 import conectarBD from './db/db.js';
 import { tiposUsuario } from './graphql/types.js';
-import { resolvers } from './graphql/resolvers.js';
+import { resolversUsuario } from './graphql/resolvers.js';
 
 dotenv.config();
 
 const server = new ApolloServer({
   typeDefs: tiposUsuario,
-  resolvers: resolvers,
+  resolvers: resolversUsuario,
 });
 
 const app = express();

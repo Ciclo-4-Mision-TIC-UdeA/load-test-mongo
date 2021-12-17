@@ -13,7 +13,7 @@ const tiposUsuario = gql`
     Usuarios: [Usuario]
   }
 
-    type Mutation {
+  type Mutation {
     crearUsuario(
       nombre: String!
       apellido: String!
@@ -22,6 +22,7 @@ const tiposUsuario = gql`
     ): Usuario
 
     eliminarUsuario(correo: String): Usuario
+  }
 `;
 
 export { tiposUsuario };
