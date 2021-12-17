@@ -13,12 +13,10 @@ const userSchema = new Schema({
   identificacion: {
     type: String,
     required: true,
-    unique: true,
   },
   correo: {
     type: String,
     required: true,
-    unique: true,
   },
 });
 
